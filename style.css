@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #0d0d0d;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+    background: url('/pexels-life-of-pix-4291.jpeg') center no-repeat;
+}
+
+#bgimg {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( to right,   rgba(0, 255, 0, 0.4), rgba(0, 255, 0, 0.2), rgba(51, 51, 77, 0.1));
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.mid { 
+    background: rgba(255, 255, 255, 0.4);
+    padding: 2rem;
+    margin: 10vw; 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    letter-spacing: 1.5px;
+}
+
+hr {
+    border-top: 2px solid black;
+    margin: auto;
+    width: 40%;
+}
+
+#countdown {
+    padding-top: 1rem;
+    display: flex;
+    align-self: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.bottomleft {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 2rem;
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
+    
+}
+
+.bottom {
+    font-weight: 600;
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
