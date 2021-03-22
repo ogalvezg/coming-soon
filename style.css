@@ -5,6 +5,8 @@ body {
     font-family: "Courier New", Courier, monospace;
     font-size: 2rem;
     background: url('/pexels-life-of-pix-4291.jpeg') center no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 #bgimg {
@@ -23,15 +25,16 @@ body {
 }
 
 .mid { 
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.5);
     padding: 2rem;
-    margin: 10vw; 
+    margin-left: 5vw; 
     position: absolute;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
+    text-align: center;
     letter-spacing: 1.5px;
 }
 
@@ -46,13 +49,13 @@ hr {
     display: flex;
     align-self: center;
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .bottomleft {
     width: 100%;
-    background: rgba(255, 255, 255, 0.4);
-    margin: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 2rem 0;
     position: absolute;
     display: flex;
     align-self: flex-end;
@@ -63,10 +66,71 @@ hr {
 
 .bottom {
     font-weight: 600;
-    
-
+    text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
+
+    .mid {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+    }
+
+    #countdown {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-top: 0;
+    }
+
+    .bottomleft {
+        width: 100%;
+    }
+
+    .bottom {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
     
+    .mid {
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .bottomleft {
+        margin: 1.5rem 0;
+        width: 100%;
+    }
+
+    .bottom {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .bottomleft {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .bottom {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
 }
